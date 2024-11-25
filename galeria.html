@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Cátedra de la Paz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Vinculación al CSS -->
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Galería de Cátedra</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="entrevista.html">Entrevistas</a></li>
+                <li><a href="foros.html">Foros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="judea.html">Judea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="galeria">
+            <!-- Imagen 1 (sin cambios) -->
+            <div class="imagen-container">
+                <img src="ecommerce/paloma.png" alt="Paloma de la Paz">
+                <div class="overlay">
+                    <p>Representación de la paloma como símbolo de la "paz".</p>
+                </div>
+            </div>
+
+            <!-- Imagen 2 (con clic para abrir en modal) -->
+            <div class="imagen-container" onclick="abrirModal('ecommerce/conflicto.png')">
+                <img src="ecommerce/conflicto.png" alt="Conflicto Armado">
+                <div class="overlay">
+                    <p>Cronología del conflicto armado en Colombia.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 3 (sin cambios) -->
+            <div class="imagen-container">
+                <img src="ecommerce/imagencamiseta.png" alt="Mensaje de Paz">
+                <div class="overlay">
+                    <p>Camiseta representativa del propósito de Reincorporados en la Judea".</p>
+                </div>
+            </div>
+
+            <!-- Imagen 4 (con clic para abrir en modal) -->
+            <div class="imagen-container" onclick="abrirModal('ecommerce/representacion.jpg')">
+                <img src="ecommerce/representacion.jpg" alt="Guerra y paz en un camino por la Cátedra">
+                <div class="overlay">
+                    <p>Guerra y paz en un camino por la Cátedra.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 5 (con clic para abrir en modal) -->
+            <div class="imagen-container" onclick="abrirModal('ecommerce/cuentoRosa.png')">
+                <img src="ecommerce/cuentoRosa.png" alt="Imagen representativa a el relato 1.">
+                <div class="overlay">
+                    <p>Una mirada a el relato 1 basado en la historia de Rosa en el rio de las estrellas.</p>
+                </div>
+            </div>
+
+
+        <!-- Imagen 7 (con clic para abrir en modal) -->
+            <div class="imagen-container" onclick="abrirModal('ecommerce/cuentoRosa.png')">
+                <img src="ecommerce/judea2.png" alt="Imagen a la Judea como vivencia pura">
+                <div class="overlay">
+                    <p>Representación local por territorio donde habitan personas en un proceso de Paz y recontrucción de vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio que se reproduce automáticamente -->
+        <audio class="audio" autoplay loop>
+                <source src="ecommerce/AudioConflicto.m4a" type="audio/mp4">
+                Tu navegador no soporta la reproducción de este formato.
+            </audio>
+
+    </main>
+
+
+    <!-- Sección de Relatos de Paz -->
+    <section class="relatos-paz">
+        <h2>Relatos de Paz</h2>
+        <div class="relatos-container">
+            <!-- Relato 1: El río de las estrellas -->
+            <div class="relato">
+                <h3 class="relato-titulo" onclick="toggleRelato('relato1')">Relato 1: El río de las estrellas</h3>
+                <div id="relato1" class="relato-contenido">
+                    <p>En un pequeño y olvidado rincón del Chocó vivía Rosa, una mujer que había aprendido a caminar sobre el filo de la vida y la muerte, ya que la violencia había llegado a su tierra mucho antes de que ella pudiera entenderla.</p>
+                    <p>Primero fueron los grupos armados que llegaron a su pueblo, ofreciendo "protección" a cambio de silencio. Nadie cuestionó sus armas, porque todos temían que cualquier palabra equivocada les costara la vida. Luego llegaron los desplazamientos,
+                        como una marea oscura que arrastraba todo a su paso; los vecinos se marcharon, las casas quedaron vacías, y Rosa, aún joven, tuvo que huir con su madre y su hermano, dejando atrás la tierra que la había visto nacer.</p>
+                    <p>Al llegar a la ciudad, Rosa encontró un mundo que nunca había imaginado: los edificios altos, las luces brillantes y el ruido constante de las calles. Pero también la soledad, la intolerancia y la falta de esperanza. Se refugiaron
+                        en un barrio pobre, donde la violencia se configuró en otras formas, más urbanas pero igual de crueles. Allí, en el anonimato de las calles, Rosa cargaba las cicatrices de un pasado violento, pero también el deseo de sanar.</p>
+                    <p>Un día, escuchó sobre una reunión comunitaria en su barrio, donde se hablaría de la paz. Decidió asistir, aunque no esperaba nada. En la reunión, un hombre de cabello canoso dijo: "El odio solo nos arrastra. Para sanar, debemos mirar
+                        al futuro". Esas palabras se clavaron en el corazón de Rosa. Recordó las enseñanzas de su abuela: "El río siempre sigue su curso, aunque a veces se turbe". Rosa escuchó palabras que nunca había imaginado oír en su vida: reconciliación,
+                        perdón, esperanza. Era como si por un momento, el tiempo se hubiera detenido y todos, por fin, pudieran respirar en libertad. Rosa se levantó con la determinación de no dejar que su dolor definiera su futuro.</p>
+                    <p>Inspirada, comenzó a trabajar con los niños del barrio, organizando talleres de arte donde pudieran expresar sus sueños y miedos. Poco a poco, el barrio cambió: el miedo dio paso a la esperanza, y los niños ya no solo veían violencia,
+                        sino también colores y estrellas.</p>
+                    <p>Rosa, al igual que el río de su abuela, encontró un cauce por el cual pudo fluir con fuerza, dejando atrás la oscuridad y abrazando la luz. En su corazón, llevaba la certeza de que, aunque el pasado no podía borrarse, el futuro siempre
+                        es una página en blanco, lista para ser escrita con valentía, amor y, sobre todo, paz.</p>
+                </div>
+            </div>
+
+            <!-- Relato 2 -->
+            <div class="relato">
+                <h3 class="relato-titulo" onclick="toggleRelato('relato2')">Relato 2: El Peso del Silencio</h3>
+                <div id="relato2" class="relato-contenido">
+                    <p>Julia volvió a casa después de una discusión que había dejado un hueco en su pecho. Al cruzar la puerta, el silencio era tan pesado como las palabras que no se dijeron. Miró a su padre; él también parecía quebrado, aunque no había
+                        sido tocado. Sin decir nada, ambos entendieron que a veces la mayor violencia es el vacío que dejamos entre nosotros.</p>
+                </div>
+            </div>
+
+            <!-- Relato 3 -->
+            <div class="relato">
+                <h3 class="relato-titulo" onclick="toggleRelato('relato3')">Relato 3: Las acacias</h3>
+                <div id="relato3" class="relato-contenido">
+                    <p>--- Salí pues! Si sos hombre demostrá el valor que tenés! Don Alonso Pulgarín lo escuchó con claridad, a pesar del fuerte viento que arremetía contra la casa esa noche. Hacía días no podía dormir por la angustia que encarnaba hoy,
+                        pues una semana atrás se vieron rondar personas extrañas por el pueblo, que además de cargar poncho y sombrero, el mango de un colcaballo se asomaba tras el abrigo. La gente rumoreaba que llegaron de Balboa, pero don Alonso se
+                        hizo el de oídos sordos, era octubre y de los palos había retoñado buena flor, blanca y radiante como el clima de los últimos meses. Esa mañana fue a la galería en búsqueda de más recolectores, la bonanza estaba álgida y debía
+                        apresurarse para cubrir todos los pormenores. Nadie avisó, nadie advirtió, solo dijeron que habían visto hacía dos días a Alonso hijo en la posada, hablando de su nueva carabina con la que se iba a defender de cualquier godo que
+                        se le parara al frente. Llegó a las cinco de la tarde a su casa y doña Ana se apresuró a servir la comida que, como todas las noches, eran fríjoles con arepa y chicharrón. Se sentó a la mesa junto a sus ocho hijos, hablaron de
+                        Juana, la becerra que hacía tres semanas había nacido y de Curuvita, quién se sacó un diente de leche esa mañana. Al terminar su comida todos se organizaron para dormir, sacaron sus batolas de tela para cambiarse las ropas sucias,
+                        juntaron las manos a sus frentes para rezar y rápidamente, de un salto, aterrizaron en las camas, bajo el resguardo de los cucuyos. A la hora llegaron y don Alonso temía. Temía por su esposa, quién siendo viuda caería en manos
+                        de los usurpadores de tierras, a merced de la caridad que algún pariente le ofreciera. Temía por sus pequeños, quiénes no habían cumplido los quince años y aún debían forjar carácter. Temía por sus hijos mayores, que acababan de
+                        casarse y no les podría entregar una buena dote para alimentar a las familias que formarían. Temía por su tierra, porque sin él, quién podría labrarla tal como lo había hecho. Todos corrieron al comedor para encontrarse, tomaron
+                        el rosario y comenzaron a recitar las palabras para el salvador, todos menos don Alonso, quién se quedó en el zaguán para impedir que alguno entrara. Lo que él no sabía, es que iban a arremeter a balazos la casa, y que una de esas
+                        balas se escabulliría entre el bahareque y se toparía con su corazón. Don Alonso caminó hasta llegar con su familia mientras oprimía fuertemente la mano contra su pecho. No se despidió, solo se desvaneció lentamente hasta que sus
+                        labios inmóviles les hicieron entender a doña Ana y a sus hijos, que su espíritu se había ido. Doña Ana perdió a su esposo, pero no podía perder a nadie más, así que les ordenó a sus hijos que se cubrieran con todas las mantas
+                        que encontraran, porque si llegaban a descubrir quién era varón, su destino sería el mismo que el de su padre. Así corrieron todos, hombres y mujeres por la puerta de atrás, por la misma puerta por la que habían salido todos los
+                        días a alimentar a las bestias, a los pollos y a los piscos, donde doña Ana solía colgar la ropa húmeda y los recolectores se lavaban la tierra de las manos. Por allí se fueron todos, corriendo y dando grandes zancadas hasta entrar
+                        al monte, rumbo montaña abajo donde no los pudieran alcanzar. La Chusma sin advertir que la familia se había ido, vertió aceite a la casa y prendieron fuego para obligarlos a salir. Sin ningún vivo que cruzara la puerta, la tumbaron
+                        y a los pocos metros de andar, se toparon con don Alonso, que se encontraba boca arriba, quieto, como aquel que está en un profundo sueño, solo que, con los ojos abiertos, clavados al techo y sin trazas de aliento. --- No se lo
+                        merecía. En acto de respeto sacaron el cuerpo de don Alonso ante el portón, tomaron las velas que traían para iluminar el camino, las prendieron y rodearon con ellas su silueta. Por último, se unieron en oración para que el señor
+                        le abriera las puertas del cielo. --- Era un buen hombre. Días más tarde, encontraron al pie de la finca La Hermosa a Pio Jaramillo, un hombre honesto y trabajador, con un cañonazo de colcaballo en su pecho, acababa de pintar su
+                        casa de rojo.</p>
+                </div>
+            </div>
+
+            <!-- Relato 4 -->
+            <div class="relato">
+                <h3 class="relato-titulo" onclick="toggleRelato('relato4')">Relato 4: El sabor A guerra</h3>
+                <div id="relato4" class="relato-contenido">
+                    <p>El conflicto armado colombiano se ve bajo fusiles que son activados por sujetos que aprietan gatillos causando heridas llenas de melancolía. Veo tierra que es pisada de diferentes formas por sujetos: niños, militares, guerrillas, paramilitares,
+                        falsos positivos, firmantes de paz, campesinos, entre otros sujetos que al pisar tienen un impacto en su contexto. Veo uniformes con ideologías políticas dentro de costuras que demarcan colores llenos de símbolos que trascienden
+                        toda una historia de hechos revolucionarios. Veo sangre y lágrimas que se derraman por los cuerpos en los montes producto ha hechos de intolerancia social. Veo una paloma blanca que es encadena por una falsa ilusión de paz total,
+                        su libertad es limitada a volar unos cuantos metros bajo un pedaje de impuestos. Veo un medio ambiente explotado por un juego de beneficios económicos: los ríos, las montañas, los cultivos, los árboles, los animales, entre otros
+                        elementos de la naturaleza son usados como un juego de feria. Veo gente marchando por un no silencio que reivindique la verdad y los derechos desligados por un estado gobernante censurador de principios éticos. Veo máquinas de
+                        guerra pintadas y equipadas con un poder aniquilador de todo dialogo, conformado por piezas de diferentes partidos políticos que buscan formar una pirámide llena de dólares. Veo un mundo fragmentado y cocido a pedazos por acuerdos
+                        incompletos, bajo una firma abstracta que se difumina al pasar del tiempo. Veo sujetos que juegan a evadir las explosiones que pasan por su reflejo de sus ojos, los proyectiles y las minas se disipan con las ilusiones de escuchar
+                        un amanecer sin caos. Veo unos medios de comunicación que propagan percepciones que incentivan a la ignorancia, a la censura de la no verdad de los hechos, a un vertedero de muertes archivadas. Veo platos vacíos llenos de hambre
+                        y trabajo duro no remunerado, servidos por sujetos que son discriminados por una orientación sexual. Veo casas que son construidas bajo materiales que reflejan la humildad y las culturas transversales del multicolor del pueblo
+                        colombiano. Veo en los tableros las palabras conformadas que unidas dicen conflicto armado en búsqueda de una sociedad justa. El conflicto armado se escucha bajo llantos llenos de dolor que transmiten vidas que dejaron der ser
+                        producto a un acto revolucionario de grupos por ser la única forma de ser atendidos por un estado que solo escucha cuando es alterado el pueblo con actos atroces. Escucho voces que fueron silenciadas por ser líderes sociales que
+                        buscaban un mejor país donde poder habitar. Escucho radios con comunicados llenos de ondas que desligan noticias de un país colombiano que acontece un dolor que se va incrementando al generarse tanto eco que interfiere la señal.
+                        Escucho los animales despertar y ambientar un territorio dentro de habitantes que viven una odisea llena de tragedias. Escucho órdenes y gritos producidos por voces que circundan dentro de cuerpos descontrolados por la desesperación
+                        y el orden. Escucho defensores de la paz que pintan las paredes con arte político con el fin de avivar el fuego del pueblo que se disipa por opresores corruptos que abusan de su poder en el intento de silenciar las voces. Escucho
+                        canciones dentro de audios conformados por letras con versos que se disparan como manifestaciones que llaman el derecho al impedir el no propagar como una onda expansiva las injusticias sociales provocadas por el conflicto armado.
+                        Escucho al Esmad y la Policía Nacional activando su fuerza de dispersión ante las marchas pacíficas y no pacificas propagando el poder dominante opresor. Escucho los diferentes géneros, sexos u variedades existentes proclamar una
+                        equidad dentro de un conflicto armado que vulnera sus derechos producto a un cuerpo lleno de tabúes. Escucho a los padres comunicar ante la defensoría: la desaparición, la muerte, la violación, el desplazamiento, la destrucción
+                        de su hogar provocado por actores políticos. Escucho docentes y compañeros hablar sobre el conflicto armado buscando el construir un proceso donde se pueda conectar nuevamente los tejidos sociales destruidos. Escucho el conflicto
+                        armado dentro de unas celdas de diferentes estilos que privan a las personas de: la libertad, de la vida, de la seguridad, de una buena convivencia, entre otros factores que privan su pleno desarrollo. El conflicto armado huele
+                        a carne putrefacta que se descompone de bajo de lugares no vistos posiblemente nunca vueltos a ver, lleno de cadáveres desaparecidos sepultándose con ellos la esencia de la verdad de los hechos. Huelo a café: un producto lleno
+                        de trasfondos no tan visibles que integran la esencia de un producto no valorado económicamente siendo reemplazado por otros tipos de cultivos de índole no tan adecuados para el cuerpo humano. Huelo a pólvora proveniente de cartuchos
+                        gastados con intenciones de hacer actos que contraigan y repriman la acción de comunicar libremente. Huele a quemado producto a tantas explosiones que propagan olores que no se pueden explicar. Huele a selva que camufla dentro
+                        de los lodos el olor que respiran los sujetos al sentir las tensiones políticas. Huele a minerales extraídos por: la codicia, la falta de oportunidades y la avaricia de conseguir un sustento económico sin importar las consecuencias
+                        colaterales ocasionadas al medio ambiente y los diferentes territorios. Huele a: muerte, destrucción, tristeza, pérdidas, rabia, frustración, desesperanza, desolación, humo, ceniza, gasolina, velas consumidas, sudor, pintura, entre
+                        olores que las mismas víctimas y victimarios han podido olfatear. Huele a las botas usadas por el caminar donde transitan y se pisan los cadáveres que mueren sin saber una justificación de su muerte. El conflicto armado sabe agrio
+                        tirando a un sabor amargo y penetrante que varía según las experiencias de cada persona y el contexto del conflicto. Sabe la comida a resentimiento, miedo, ansiedad dentro de una opresión que no deja consumir el alimento bajo calma.
+                        Sabe a salado casi vencido, incomestible, vencido ante una libertad difícil de digerir y que en ocasiones no llega a los territorio para ser alimentados. Sabe a tierra con piedras dentro de un plato que es enviado a domicilio a
+                        las casas de los afectados por la guerra. Sabe a sopas o cafés que no calman el trago amargo de los licores que no ocultan del todo el dolor emocional que dejan los seres perdidos. Sabe a ostia de esperanza que le da la iglesia
+                        a las personas con la intención de mantener la fe en Dios ante el sueño de cambiar los hechos conflictivos que ofrece el conflicto armado. Sabe diferente la comida en el campo que en la ciudad, los sabores cambian dependiendo del
+                        contexto en que se disgusten. Sabe a simple cuando los hechos superan el poder de actuar de las personas ante el no poder impedir la tormenta que se avecina.</p>
+                </div>
+            </div>
+
+            <!-- Relato 5 -->
+            <div class="relato">
+                <h3 class="relato-titulo" onclick="toggleRelato('relato5')">Relato 5: La marca invisible</h3>
+                <div id="relato5" class="relato-contenido">
+                    <p>Pablo miró sus manos. No había golpes, no había moretones. Solo un frío hueco en el pecho, producto de las palabras de su madre: "Eres igual que él". Nadie gritó, nadie alzó la mano; solo el silencio hirió más que cualquier golpe.
+                        Esa noche, Pablo decidió que el verdadero cambio empezaba rompiendo esa cadena, dejando de heredar ese dolor sin voz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 Cátedra de la Paz. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para mostrar u ocultar el relato al hacer clic en el título
+        function toggleRelato(id) {
+            var relato = document.getElementById(id);
+            if (relato.style.display === "none") {
+                relato.style.display = "block";
+            } else {
+                relato.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

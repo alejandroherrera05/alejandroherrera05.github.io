@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judea - Cátedra de la Paz</title>
+    <style>
+        html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Encabezado */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Navegación */
+        
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+        /* Contenido principal */
+        
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            /* Evita que los elementos se envuelvan */
+            gap: 20px;
+            justify-content: space-between;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            flex-grow: 1;
+            /* Hace que el main ocupe el espacio restante debajo del header */
+        }
+        
+        .section {
+            background-color: #f9f9f9;
+            border: 1px solid #d1d1d1;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 480px;
+            /* Aumento el ancho máximo */
+            min-height: 60px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .section h2 {
+            background-color: #457b9d;
+            color: white;
+            margin: 0;
+            padding: 15px;
+            border-radius: 12px 12px 0 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        
+        .content {
+            padding: 20px;
+            display: none;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        .section:hover .content {
+            display: block;
+        }
+        
+        .video-container video {
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #457b9d;
+            border-radius: 8px;
+        }
+        /* Pie de página fijo */
+        
+        footer {
+            position: fixed;
+            /* Fijar el pie de página en la parte inferior */
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: #457b9d;
+            color: white;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        /* Responsividad para pantallas pequeñas */
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: row;
+                /* Asegura que todos estén en la misma fila */
+                align-items: flex-start;
+                /* Alineación de los elementos al principio */
+                overflow-x: auto;
+                /* Permite desplazamiento horizontal en pantallas pequeñas */
+            }
+            .section {
+                width: 30%;
+                /* Ajusta el ancho de los elementos para que quepan en una fila */
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Judea: Territorio de Paz</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="entrevista.html">Entrevistas</a></li>
+                <li><a href="foros.html">Foros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="judea.html">Judea</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de mapa -->
+        <div class="section">
+            <h2>Mapa de Judea</h2>
+            <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15918.866576833543!2d-75.814444!3d4.995833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3850e854cf8937%3A0x2f9657e4c7c59b8a!2sW4MX%2B8X%20Belalcazar%2C%20Caldas!5e0!3m2!1ses!2sco!4v1730512869462!5m2!1ses!2sco"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Sección de videos -->
+        <div class="section">
+            <h2>Videos destacados</h2>
+            <div class="content">
+                <div class="video-container">
+                    <video controls width="90%">
+                        <source src="ecommerce/entrevistajudea1.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    <p>Conoce a Sebastian y su proceso en la Judea.</p>
+                </div>
+                <div class="video-container">
+                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/8V3xKhJNIV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                    <p>Una vista a Jorge Isaac, representante del Ministerio del Interior, cara a que Rol le gusta desempeñarse más.</p>
+                </div>
+
+                <div class="video-container">
+                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/aAxA_7a8mjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+                    <p>La búsqueda de un futuro en paz por medio del entendimiento mútuo, que la guerra no sea opción para nadie. Jorge Isaac nos cuenta una reflexión de la patria por la guerra y una perspectiva a un entorno social competente.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sección de preguntas -->
+        <div class="section">
+            <h2>Preguntas realizadas</h2>
+            <div class="content preguntas">
+                <p><strong>¿Qué caracteriza al lugar de la Judea?</strong></p>
+                <p>Es un territorio donde habitan campesinos, firmantes de paz y sobrevivientes del conflicto armado.</p>
+                <p><strong>¿Cómo es el entorno de La Judea?</strong></p>
+                <p>Está lleno de vegetación y normas de convivencia que fomentan el orden y la paz.</p>
+                <p><strong>¿Qué desafíos enfrentan los excombatientes?</strong></p>
+                <p>Dejar atrás el conflicto fue un proceso largo y enfrentan prejuicios constantes.</p>
+            </div>
+        </div>
+
+        <!-- Reflexión adicional -->
+        <div class="section">
+            <h2>Reflexión sobre Judea</h2>
+            <div class="content">
+                <p>
+                    La Judea se erige como un poderoso símbolo de resiliencia y paz, un testimonio vivo de la capacidad humana para superar adversidades históricas y transformar el dolor en esperanza. Este lugar, con sus profundas raíces culturales y sociales, representa
+                    un ejemplo inspirador de cómo las comunidades pueden unirse para enfrentar desafíos, reconstruir sus tejidos sociales y avanzar hacia un futuro más prometedor. La Judea nos invita a reflexionar sobre la importancia de construir comunidades
+                    fuertes, basadas en la solidaridad, el respeto mutuo y la sostenibilidad. Es un recordatorio de que, incluso en los momentos más oscuros, es posible encontrar caminos hacia la reconciliación y la convivencia pacífica. Este símbolo
+                    de transformación nos motiva a valorar el papel crucial de la unidad, el diálogo y el compromiso colectivo en la construcción de sociedades más justas y equitativas, donde cada miembro tenga la oportunidad de prosperar.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 Cátedra de la Paz. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
